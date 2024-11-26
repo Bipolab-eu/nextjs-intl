@@ -1,11 +1,11 @@
 {
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, es {🇪🇸 Spanish} en {🇬🇧 English} other {Unknown}}"
+    "locale": "{locale, select, es {Spanish} en {English} other {Unknown}}"
   },
 
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "about": "About"
   }
 }
