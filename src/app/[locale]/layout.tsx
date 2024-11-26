@@ -6,7 +6,7 @@ import {routing} from '@/i18n/routing';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
-import LocaleSwitcher from '@/components/LocaleSwitcher';
+import LocaleSwitcherSelect from '@/components/LocaleSwitcher';
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -41,6 +41,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  console.log(locale)
+
   const messages = await getMessages();
 
   return (
@@ -50,7 +52,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <nav>
-            <LocaleSwitcher />
+            <LocaleSwitcherSelect />
           </nav>
           {children}
         </NextIntlClientProvider>

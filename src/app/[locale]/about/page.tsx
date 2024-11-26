@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default async function AboutPage({ params }:any) {
+type Params = Promise<{ locale: string }>
+
+export default async function AboutPage ({ params } : { params: Params }) {
   const { locale } = await params
 
   return (

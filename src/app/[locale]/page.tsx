@@ -1,3 +1,4 @@
+// la propiedad any da error en produccion. ver consola
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/routing';
  
